@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  padding: 5px;
+}
+
+
+.NoteDis{
+  border: 2px solid grey;
+  margin-bottom: 10px;
+  width: inherit ;
+  padding: 20px;
+  border-radius: 15px;
+}
