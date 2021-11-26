@@ -19,16 +19,20 @@ function Note(props) {
 
     return(
         <>
+        <div className="NoteDis">
         <h1>{note.Title}</h1>
         <p>{note.Note}</p>
 
+<hr/>
+        <Button variant="info" onClick={() => toggleModal()}>
+				EditNote
+			</Button>
+            ****
+			<Button variant="warning" onClick={() => props.deleteNote(note.id)}>
+				DeleteNote
+			</Button>
+            </div>
 
-        <Button variant="primary" onClick={() => toggleModal()}>
-				Edit
-			</Button>
-			<Button variant="danger" onClick={() => props.deleteNote(note.id)}>
-				Delete
-			</Button>
 
         <Modal show={showModal} onHide={() => toggleModal()}>
 				<Modal.Header closeButton>

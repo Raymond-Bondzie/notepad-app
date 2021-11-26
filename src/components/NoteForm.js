@@ -22,6 +22,7 @@ function NoteForm(props) {
                id: uuid(),
            };
            props.addNewNote(freshNote);
+           props.toggleModal()
            steTitle("");
            steNote("");
        }
